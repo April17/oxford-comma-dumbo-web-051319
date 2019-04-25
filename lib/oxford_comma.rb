@@ -8,7 +8,7 @@ def oxford_comma(array)
         ary << array[i]
         ary.join(" and ")
       else
-        ary << arry[i]
+        ary << array[i]
         ary.join(", ")
       end
     end
