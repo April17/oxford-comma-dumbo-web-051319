@@ -8,12 +8,11 @@ def oxford_comma(array)
       if i == array.length - 2
         ary << array[i]
         binding.pry
-        ary.join(" and ")
+        return ary.join(" and ")
       else
         ary << array[i]
         ary.join(", ")
       end
     end
-    return ary
   end
 end
