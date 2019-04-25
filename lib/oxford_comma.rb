@@ -7,11 +7,13 @@ def oxford_comma(array)
   else
     for i in 0...array.length
       if i == array.length - 1
+        ary = []
+        ary << string
         ary << array[i]
         return ary.join(" and ")
       else
         ary << array[i]
-        ary.join(", ")
+        string = ary.join(", ")
       end
     end
   end
