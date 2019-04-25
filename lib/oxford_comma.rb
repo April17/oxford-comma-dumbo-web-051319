@@ -1,6 +1,7 @@
 require "pry"
 def oxford_comma(array)
   ary = []
+  string = ""
   if array.length == 1
     return array.join
   else
@@ -10,7 +11,7 @@ def oxford_comma(array)
         return ary.join(" and ")
       else
         ary << array[i]
-        ary = ary.join(", ")
+        ary.join(", ")
       end
     end
   end
